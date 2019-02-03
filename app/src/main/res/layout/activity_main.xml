@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/pictitle1"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/clayout1"
+            android:layout_width="180dp"
+            android:layout_height="190dp"
+            android:layout_below="@id/title"
+            android:layout_centerInParent="true"
+            >
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="110dp"
+                android:src="@drawable/delete" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+
+                android:background="@drawable/addimage"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/radiotitle"
+            android:textSize="20sp"
+            android:text="@string/radiotitle1"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/clayout1"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:id="@+id/radiogroup"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/radiotitle"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radiooption1"
+                />
+            <RadioButton android:id="@+id/option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radiooption2"
+                />
+            <RadioButton android:id="@+id/option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radiooption3"
+                />
+        </RadioGroup>
+
+        <Switch
+            android:layout_below="@id/radiogroup"
+            android:id="@+id/simpleSwitch"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:theme="@style/SwitchTheme"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/switchtext" />
+        <EditText
+            android:id="@+id/comment"
+            android:layout_below="@+id/simpleSwitch"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="top"
+            android:background="@drawable/backgroundedittext"
+            android:visibility="gone"
+            android:layout_height="100dp" />
+
+    </RelativeLayout>
+
+            <View
+                android:id="@+id/view"
+                android:background="#000"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <RelativeLayout
+                android:id="@+id/relativelayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/pictitle2"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:id="@+id/clayout2"
+                    android:layout_width="180dp"
+                    android:layout_height="190dp"
+                    android:layout_below="@id/title2"
+                    android:layout_centerInParent="true"
+                    >
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fab2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="110dp"
+                        android:src="@drawable/delete" />
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+
+                        android:background="@drawable/addimage"
+                         />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/radiotitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/clayout2"
+                    android:layout_margin="10dp"
+                    android:text="@string/radiotitle2"
+                    android:textSize="20sp" />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/radiogroup2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radiotitle2"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/option12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radiooption1" />
+
+                    <RadioButton
+                        android:id="@+id/option22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radiooption2" />
+
+                    <RadioButton
+                        android:id="@+id/option32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radiooption3" />
+                </RadioGroup>
+
+                <Switch
+                    android:id="@+id/simpleSwitch2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radiogroup2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:text="@string/switchtext"
+                    android:theme="@style/SwitchTheme" />
+
+                <EditText
+                    android:id="@+id/comment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/simpleSwitch2"
+                    android:layout_margin="10dp"
+                    android:gravity="top"
+                    android:background="@drawable/backgroundedittext"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+      </LinearLayout>
+
+
+    </ScrollView>
+   <LinearLayout
+       android:id="@+id/linearlayout2"
+       android:visibility="gone"
+       android:background="#123"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <Button
+           android:id="@+id/closebutton"
+           android:text="Close Image"
+           android:textColor="#000"
+           android:textSize="30sp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+            />
+
+       <ImageView
+           android:id="@+id/imageview"
+           android:layout_width="400dp"
+           android:layout_height="500dp" />
+
+   </LinearLayout>
+</RelativeLayout>

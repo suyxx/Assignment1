@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="pictitle1">Photo 1</string>
+    <string name="radiotitle1">Photo 1 choice</string>
+    <string name="radiooption1">Good</string>
+    <string name="radiooption2">Ok</string>
+    <string name="radiooption3">Bad</string>
+    <string name="commenttitle1">Photo 1 comment</string>
+    <string name="pictitle2">Photo 2</string>
+    <string name="radiotitle2">Photo 2 choice</string>
+    <string name="commenttitle2">Photo 2 comment</string>
+
+    <string name="switchtext">Provide Comment ?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
